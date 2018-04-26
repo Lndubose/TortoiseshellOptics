@@ -45,6 +45,11 @@ nav span {
   margin: 1rem 1rem;
 }
 
+nav a:link, nav a:visited {
+  text-decoration: none;
+  color: white;
+}
+
 .menu {
   display: none;
 }
