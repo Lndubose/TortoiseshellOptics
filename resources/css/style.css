@@ -1,0 +1,274 @@
+/*universal*/
+html {
+  font-size: 18px;
+  line-height: 1.4;
+}
+
+body {
+  display: flex;
+  flex-direction: column;
+  align-content: center;
+  justify-content: center;
+  font-family: Helvetica;
+  text-align: center;
+}
+
+/*header*/
+header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin: 1rem auto;
+  max-width: 960px;
+  color: white;
+  background-color: cadetblue;
+}
+
+.logo {
+  display: flex;
+  align-items: center;
+  margin: 1rem 0;
+}
+
+.logo img{
+  margin: 0 1rem 0 2rem;
+  height: 1.5rem;
+  width: auto;
+}
+
+/*navigation*/
+nav {
+  display: flex;
+}
+
+nav span {
+  margin: 1rem 1rem;
+}
+
+.menu {
+  display: none;
+}
+
+/*header and banner*/
+.header-banner {
+  height: 30rem;
+  background-image: url(../images/glasses-bg.png);
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: cover;
+}
+
+/*banner*/
+.banner {
+  display: block;
+  margin: 10rem -2rem 0 0;
+  padding: 1.5rem 5rem;
+  max-width: 960px;
+  font-size: 2rem;
+  font-weight: bold;
+  line-height: 1.2;
+  background-color: white;
+  text-transform: uppercase;
+}
+
+
+.flex {
+  display: flex;
+  justify-content: flex-end;
+  margin: auto;
+  max-width: 960px;
+}
+
+/*main-area*/
+
+.products {
+  display: flex;
+  justify-content: center;
+  margin: auto;
+  max-width: 960px;
+}
+
+.products figure {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: space-around;
+  margin: 3rem 3rem;
+  height: 8rem;
+  line-height: 1.4;
+}
+
+.exam img {
+  width: 3.5rem;
+}
+
+.fitting img, .delivery img{
+  width: 5rem;
+  height: auto;
+}
+
+/*philosphy and appointments*/
+.phil-appoint {
+  display: flex;
+  justify-content: center;
+  max-width: 960px;
+  margin: auto;
+}
+
+.philosophy, .appointments {
+  display: block;
+  margin-right: 5%;
+  width: 35%;
+}
+
+.philosophy h3, .appointments h3 {
+  padding: 0.5rem 1.25rem;
+  width: 10rem;
+  font-size: 1rem;
+  font-weight: bold;
+  background-color: cadetblue;
+  color: white;
+  text-transform: uppercase;
+}
+
+.phil-appoint p {
+  margin-top: 1rem;
+  margin-bottom: 5rem;
+  text-align: left;
+}
+
+/*footer*/
+
+footer {
+  display: flex;
+  align-items: center;
+  max-width: 960px;
+  margin: auto;
+  padding: 4rem;
+  background-color: azure;
+}
+
+footer img {
+  padding-right: 1rem;
+  height: 1.5rem;
+}
+
+/*media queries*/
+/*tablet*/
+@media only screen and (max-width: 1024px) {
+  body {
+    max-width: 100%;
+  }
+  header {
+    margin-top: 0;
+  }
+
+  .header-banner{
+    height: 22rem;
+  }
+
+  .banner {
+    display: flex;
+    align-items: center;
+    margin: 5rem 2rem;
+    padding: 0.75rem 4rem;
+    height: 3rem;
+    font-size: 1.33rem;
+  }
+
+}
+
+/*phone*/
+@media only screen and (max-width: 750px) {
+body {
+  width: 100%;
+}
+
+/*header*/
+  header {
+    margin-top: 0;
+    width: 100%;
+  }
+
+  .logo h3 {
+    display: none;
+  }
+
+  .menu {
+    display: block;
+  }
+
+  .service, .product, .contact {
+    display: none;
+  }
+/*banner*/
+.header-banner {
+  height: 17rem;
+  width: auto;
+  background-position: 20%;
+}
+
+ .banner {
+   display: flex;
+   align-items: center;
+   justify-content: center;
+   padding: 0.5rem 0;
+   margin: 8rem 0 1rem 0;
+    width: 100%;
+   font-size: 1rem;
+ }
+
+/*products*/
+  .products{
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-start;
+    margin: 3.77rem;
+    font-size: 0.77rem;
+  }
+
+  .products figure {
+    margin: 0;
+  }
+
+  .fitting, .delivery{
+    padding-top: 1.54rem;
+    padding-bottom: 0;
+  }
+
+  .break {
+    display: none;
+  }
+
+/*philosophy and appointments*/
+.phil-appoint {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+}
+
+ .philosophy h3, .appointments h3 {
+   display: flex;
+   justify-content: center;
+   width: 100%;
+   padding: 0.5rem 100%;
+   font-size: 1.25rem;
+   margin: 0;
+ }
+
+ .philosophy p , .appointments p {
+   font-size: 0.77rem;
+   padding: 1rem;
+   width: 270%;
+ }
+  /*footer*/
+
+  footer span {
+    display: none;
+  }
+
+  footer img {
+    margin: auto;
+  }
+
+}
